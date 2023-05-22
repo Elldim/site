@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <nav id="navbar">
+                    <div class="navbar-container">
+                        <p><a href="home.html"><img src="img/logo/logo.svg" alt="" class="header-logo"></a></p> 
+                        <div class="navbar-wrap">
+                            <ul class="navbar-menu">
+                                <li>
+                                    <a href="#" class="link-catalog">Каталог</a>
+                                    <ul class="submenu">
+                                        <div class="submenu-list">
+                                            <div class="submenu-list-left">
+                                                <li><a href="#">Квартиры</a></li>
+                                                <li><a href="html/house.html">Дома и коттеджи</a></li>
+                                                <li><a href="html/rooms.html">Помещения</a></li>
+                                            </div>
+                                            <div class="submenu-list-apartament">
+                                                <li><a href="html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                                                <li><a href="html/apartament_resale.html">Квартиры во вторичке</a></li>
+                                            </div>
+                                            <div class="submenu-list-house__cottage">
+                                                <li><a href="html/house.html">Дома</a></li>
+                                                <li><a href="html/cottage.html">Коттеджи</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="html/information.html" class="link-info">Информация</a></li>
+                                <li><a href="html/contact.html" class="link-contacts">Контакты</a></li>
+                                <li><a href="html/partner.html" class="link-partners">Партнеры</a></li>
+                            </ul>
+                            <img src="img/home-img/mark-icon.svg" alt="" class="mark">
+                            <a href="" class="city navbar__style">Воронеж</a>
+                            <div href="" class="user navbar__style" id="open-modal-reg-btn">Вход/Регистрация</div>
+                            <div class="modal-reg" id="modal-window-reg">
+                                <div class="modal-reg-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Регистрация </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__name form__group">
+                                                <label class="form__label">Введите имя</label>
+                                                <input type="text" name="user" class="form__input" placeholder="Ваше имя" required>
+                                            </div>
+                                            <div class="form__surname form__group">
+                                                <label class="form__label">Введите фамилию</label>
+                                                <input type="text" name="surname" class="form__input" placeholder="Ваша фамилия" required>
+                                            </div>
+                                            <div class="form__email form__group">
+                                                <label class="form__label">Введите Email</label>
+                                                <input type="email" name="email" class="form__input" placeholder="Ваш Email" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Придумайте пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Придумайте пароль" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Повторите пароль</label>
+                                                <input type="password" name="repeat-password" class="form__input" placeholder="Повторите пароль" required>
+                                            </div>
+                                            <div class="form__checkbox-btn">
+                                                <input type="checkbox" class="input__checkbox" id="checkbox_reg" required> 
+                                                <label class="checkbox__label" for="checkbox_reg"> <p> Cоглашаюсь с <span class="checkbox-link"> условиями использования персональных данных </span> и <span class="checkbox-link"> правилами программы New House </span> </p> </label>
+                                            </div>
+                                            <input type="submit" class="form__button-reg" value="Зарегистрироваться">
+                                            <div class="link-login"> Есть аккаунт? <span class="login-btn" id="open-modal-log-btn"> Войти </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-log" id="modal-window-log">
+                                <div class="modal-log-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Вход в личный кабинет </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__email__num-tel form__group">
+                                                <label class="form__label">Введите email или номер телефона</label>
+                                                <input type="text" name="email__num-tel" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Введите пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Пароль" required>
+                                            </div>
+                                            <div class="recovery-pass">
+                                                <span class="reg-btn" id="open-modal-reset_pass-btn"> Забыли пароль? </span>
+                                            </div>
+                                            <input type="submit" class="form__button-log" value="Войти">
+                                            <div class="link-reg"> Нет аккаунта? <span class="reg-btn" id="open-modal-registration-btn"> Зарегистрироваться </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-reset_pass" id="modal-window-reset_pass">
+                                <div class="modal-reset_pass-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Восстановление пароля </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form-reset form__group">
+                                                <label class="form__label">Введите адрес электронной почты или номер <br> телефона, на который зарегистрирован профиль</label>
+                                                <input type="text" name="reset_pass" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <input type="submit" class="form__button-reset_pass" value="Восстановить">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-main">
+                    <h1> Скидки до 40% на новостройки от <br> 2 млн. рублей! </h1>
+                    <a href="html/action.html" class="button-link">
+                        <div class="header-main-button">
+                            Подробнее
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main-offer">
+            <div class="main-offer-item__one">
+                <div class="main-offer-container">
+                    <h2> Предложения для вас </h2>
+                    <a href="html/apartament_new-build-index/apart-dream.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/home-img/main-home_one.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Мечта» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Мечта» — это идеальное сочетание стиля и премиальности. <br> Жилой дом премиум-класса состоит из 4 секций переменной <br> этажности (5-12 этажей). Его строгий корпус с отделкой <br> кирпичом, керамогранитом и штукатуркой прекрасно <br> вписывается в тихий район. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 1-комн. от 46 кв.м </h3>
+                                                <p> 5.8 - 6.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 67 кв.м </h3>
+                                                <p> 6.2 - 7.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 89 кв.м </h3>
+                                                <p> 7.3 - 8.3 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-offer-item__two">
+                <div class="main-offer-container">
+                    <a href="html/apartament_new-build-index/apart_flower-boulevard.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/home-img/main-home_two.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Цветной бульвар» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Цветной бульвар» — это идеальное место, подходящее для <br> проживания небольшой семье. Жилой комплекс состоит из <br> 15 домов разного цвета. Жилой дом  состоит из 1-3 <br> подъездов с разной этажностью (17-25 этажей). Его <br> необычный стиль домов прекрасно вписывается в тихий и <br> уютный район. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 1-комн. от 46 кв.м </h3>
+                                                <p> 1.2 - 2.3 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 67 кв.м </h3>
+                                                <p> 3.4 - 5.7 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 89 кв.м </h3>
+                                                <p> 6 - 7.8 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-offer-item__three">
+                <div class="main-offer-container">
+                    <a href="html/house-item/house_210.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/home-img/main-home_three.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> Дачный домик 210 кв.м </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        Небольшой дачный домик с 7 жилыми комнатами и 2 <br> самузлами. Участок 12 соток, дом идеально подойдет как <br> для дачи, так и для постоянного жилья. Находиться в 25 км <br> от города. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item price-item__one-option">
+                                            <div class="price-item__text">
+                                                <h3> 7-комн. дом + 12 соток земли </h3>
+                                                <p> 15 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-offer-item__four">
+                <div class="main-offer-container">
+                    <a href="html/house-item/house_250.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/home-img/main-home_four.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> Уютный дом 250 кв.м </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        Уютный дом 250 кв.м с 8 жилыми комнатами, 1 самузлом, <br> небольшой верандой и 20 сотками земли. На територри <br> дома есть небольшая баня, а также беседка с манагалом. <br> Дом подходит для постоянного жилья, но может также быть <br> как дачный домик. Находиться в 40 км от города. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item price-item__one-option">
+                                            <div class="price-item__text">
+                                                <h3> 8-комн. дом + 20 соток земли </h3>
+                                                <p> 16.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-offer-item__five">
+                <div class="main-offer-container">
+                    <a href="html/rooms-item/rooms_350.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/home-img/main-home_five.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> Помещение 350 кв.м </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        Помещение общей площадью 350 кв.м для свободного <br> назначения в центре города. Может подойти как для <br> магазина, так и для небольшого офиса. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item price-item__one-option">
+                                            <div class="price-item__text">
+                                                <h3> Помещение свободн.назн. 350 кв.м </h3>
+                                                <p> 15.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-offer-item__six">
+                <div class="main-offer-container">
+                    <a href="html/rooms-item/rooms_210.html" class="offer-link">
+                        <div class="offer-content">
+                            <div class="content-info">
+                                <img src="img/rooms-img/rooms-page-1_two.png" alt="" class="content-img">
+                                <div class="offer-container">
+                                    <div class="content-title">
+                                        <h2> Помещение 210 кв.м </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        Помещение общей площадью 210 кв.м в новом жилом <br> комплексе на 2 этаже. Может подойти для небольшого <br> салона красоты или офиса. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item price-item__one-option">
+                                            <div class="price-item__text">
+                                                <h3> Помещение свободн.назн. 210 кв.м </h3>
+                                                <p> 20.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-announcement">
+                <p> Нужна помощь с подбором <br> недвижимости? Звони! </p> 
+                <div class="main-announcement_btn" id="open-modal-btn"> Номер риелтора </div>
+                <div class="modal-realtor" id="modal-window">
+                    <div class="modal-realtor-box">
+                        <div class="modal-form">
+                            <div class="form-title">
+                                <h3> Связаться с риелтором </h3>
+                            </div>
+                            <form class="form__content">
+                                <div class="form__name form__group">
+                                    <label class="form__label">Введите имя</label>
+                                    <input type="text" class="form__input" placeholder="Ваше имя">
+                                </div>
+                                <div class="form__number form__group">
+                                    <label class="form__label">Введите номер телефона</label>
+                                    <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+                                </div>
+                                <div class="form__ask form__group">
+                                    <label class="form__label">Опишите, что вас интересует</label>
+                                    <textarea class="form__area"></textarea>
+                                </div>
+                                <input type="submit" class="form__button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-link">
+                    <div class="company-info-list">
+                        <h3> О компании </h3>
+                        <ul>
+                            <li><a href="html/partner.html"> Партнеры </a></li>
+                            <li class="contacts-list"><a href="html/contact.html"> Контакты</a></li>
+                            <li><a href="html/information.html"> Информация </a></li>
+                        </ul>
+                    </div>
+                    <div class="catalog-list">
+                        <h3> Каталог </h3>
+                        <ul>
+                            <li><a href="html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                            <li><a href="html/apartament_resale.html">Квартиры во вторичке</a></li>
+                            <li><a href="html/cottage.html">Коттеджи</a></li>
+                            <li><a href="html/house.html">Дома</a></li>
+                            <li><a href="html/rooms.html">Помещения</a></li>
+                        </ul>
+                    </div>
+                    <div class="support-list">
+                        <h3> Поддержка </h3>
+                        <ul>
+                            <li>+7 951 557 54-32</li>
+                            <li>New_house@gmail.com</li>
+                            <li class="сopyright-statement">2023 © New House. Все права защищены</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
