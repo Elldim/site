@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Квартиры в новостройке </title>
+    <link rel="stylesheet" href="../css/apartament_new-build-page_two.css">
+    <link rel="stylesheet" href="../css/nav_footer-style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <nav id="navbar">
+                    <div class="navbar-container">
+                        <p><a href="../home.html"><img src="../img/logo/logo.svg" alt="" class="header-logo"></a></p>
+                        <div class="navbar-wrap">
+                            <ul class="navbar-menu">
+                                <li>
+                                    <a href="#" class="link-catalog">Каталог</a>
+                                    <ul class="submenu">
+                                        <div class="submenu-list">
+                                            <div class="submenu-list-left">
+                                                <li><a href="#">Квартиры</a></li>
+                                                <li><a href="../html/house.html">Дома и коттеджи</a></li>
+                                                <li><a href="../html/rooms.html">Помещения</a></li>
+                                            </div>
+                                            <div class="submenu-list-apartament">
+                                                <li><a href="../html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                                                <li><a href="../html/apartament_resale.html">Квартиры во вторичке</a></li>
+                                            </div>
+                                            <div class="submenu-list-house__cottage">
+                                                <li><a href="../html/house.html">Дома</a></li>
+                                                <li><a href="../html/cottage.html">Коттеджи</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="../html/information.html" class="link-info">Информация</a></li>
+                                <li><a href="../html/contact.html" class="link-contacts">Контакты</a></li>
+                                <li><a href="../html/partner.html" class="link-partners">Партнеры</a></li>
+                            </ul>
+                            <img src="../img/home-img/mark-icon.svg" alt="" class="mark">
+                            <a href="" class="city navbar__style">Воронеж</a>
+                            <div href="" class="user navbar__style" id="open-modal-reg-btn">Вход/Регистрация</div>
+                            <div class="modal-reg" id="modal-window-reg">
+                                <div class="modal-reg-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Регистрация </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__name form__group">
+                                                <label class="form__label">Введите имя</label>
+                                                <input type="text" name="user" class="form__input" placeholder="Ваше имя" required>
+                                            </div>
+                                            <div class="form__surname form__group">
+                                                <label class="form__label">Введите фамилию</label>
+                                                <input type="text" name="surname" class="form__input" placeholder="Ваша фамилия" required>
+                                            </div>
+                                            <div class="form__email form__group">
+                                                <label class="form__label">Введите Email</label>
+                                                <input type="email" name="email" class="form__input" placeholder="Ваш Email" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Придумайте пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Придумайте пароль" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Повторите пароль</label>
+                                                <input type="password" name="repeat-password" class="form__input" placeholder="Повторите пароль" required>
+                                            </div>
+                                            <div class="form__checkbox-btn">
+                                                <input type="checkbox" class="input__checkbox" id="checkbox_reg" required> 
+                                                <label class="checkbox__label" for="checkbox_reg"> <p> Cоглашаюсь с <span class="checkbox-link"> условиями использования персональных данных </span> и <span class="checkbox-link"> правилами программы New House </span> </p> </label>
+                                            </div>
+                                            <input type="submit" class="form__button-reg" value="Зарегистрироваться">
+                                            <div class="link-login"> Есть аккаунт? <span class="login-btn" id="open-modal-log-btn"> Войти </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-log" id="modal-window-log">
+                                <div class="modal-log-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Вход в личный кабинет </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__email__num-tel form__group">
+                                                <label class="form__label">Введите email или номер телефона</label>
+                                                <input type="text" name="email__num-tel" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Введите пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Пароль" required>
+                                            </div>
+                                            <div class="recovery-pass">
+                                                <span class="reg-btn" id="open-modal-reset_pass-btn"> Забыли пароль? </span>
+                                            </div>
+                                            <input type="submit" class="form__button-log" value="Войти">
+                                            <div class="link-reg"> Нет аккаунта? <span class="reg-btn" id="open-modal-registration-btn"> Зарегистрироваться </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-reset_pass" id="modal-window-reset_pass">
+                                <div class="modal-reset_pass-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Восстановление пароля </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form-reset form__group">
+                                                <label class="form__label">Введите адрес электронной почты или номер <br> телефона, на который зарегистрирован профиль</label>
+                                                <input type="text" name="reset_pass" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <input type="submit" class="form__button-reset_pass" value="Восстановить">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-title">
+                    <h1> КВАРТИРЫ В НОВОСТРОЙКЕ </h1>
+                </div>
+            </div>
+        </header>
+        <main class="main-apartament">
+            <div class="main-apartament-item__seven">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_one.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Радуга» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Радуга» — это большое разнообразие цветов дома. Все <br> дома жилого комплекса премиум-класса состоит из 10 <br> домов одинаковой этажности (17 этажей). Необычные цвета <br> домов придают микрорайону некую изюминку. Микрорайон <br> находится в спальном районе и идеально подойдет для <br> проживания семьи с детьми. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 1-комн. от 43 кв.м </h3>
+                                                <p> 2.8 - 3.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 67 кв.м </h3>
+                                                <p> 4.2 - 5.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 86 кв.м </h3>
+                                                <p> 6.3 - 8.3 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-apartament-item__eight">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_two.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> Жилой дом «Север» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Север» — это 25 этажный жилой дом, который находится на <br> окрайне города. Этот дом отлично подойдет семье с детьми <br> или тем, кто хочет отдохнуть недалеко от набережной. <br> Высокие потолки и пол с регулируемым подогревом. 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 70 кв.м</h3>
+                                                <p> 3.7 - 8.3 млн. ₽</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 83 кв.м </h3>
+                                                <p> 8.5 - 9.2 млн. ₽</p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 4-комн. от 91 кв.м </h3>
+                                                <p> 9.4 - 9.8 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-apartament-item__nine">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_three.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Журавли» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Журавли» — это небольшой жилой комплекс, который <br> находится недалеко от центра города. Это место отлично <br> подходит для проживания семьи с детьми или людям <br> которые хотят жить поближе к центру. Жилой комплекс <br> состоит из 5 домов. Каждый дом состоит из 3 подъездов с <br> разной этажностью (9-12 этажей). 
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 1-комн. от 46 кв.м </h3>
+                                                <p> 1.4 - 2.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 53 кв.м </h3>
+                                                <p> 2.3 - 3.1 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 64 кв.м </h3>
+                                                <p> 3.4 - 4.2 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-apartament-item__ten">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_four.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> Жилой дом «Дубки» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Дубки» — это 15 этажный жилой дом, который находится <br> недалеко от центра города. Этот дом отлично подойдет <br> большой семье, которая хочет немного простора. Огромные <br> потолки и пол с регулируемым подогревом ждут вас.   
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 98 кв.м </h3>
+                                                <p> 2.4 - 3.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 110 кв.м </h3>
+                                                <p> 3.9 - 4.2 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 4-комн. от 150 кв.м </h3>
+                                                <p> 4.5 - 5.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-apartament-item__eleven">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_five.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Эверест» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Эверест» — это жилой комплекс, который находится в <br> тихом и уютно районе, недалеко от центра города. Свежий <br> воздух, отличная планировка и замечательный вид из окна. <br> Жилой комплекс состоит из 6 домов сделанных в одном <br> стиле. Каждый дом  состоит из 1 подъезда с этажностью в 25 <br> этажей!    
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 1-комн. от 42 кв.м </h3>
+                                                <p> 2.3 млн. - 2.8 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 62 кв.м </h3>
+                                                <p> 3 - 4.5 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 82 кв.м </h3>
+                                                <p> 5.2 - 7 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-apartament-item__twelve">
+                <div class="main-apartament-container">
+                    <a href="#" class="apartament-link">
+                        <div class="apartament-content">
+                            <div class="content-info">
+                                <img src="../img/apartament_new-build-img/apartamen_new-build-page-2_six.png" alt="" class="content-img">
+                                <div class="apartament-container">
+                                    <div class="content-title">
+                                        <h2> ЖК «Модерн» </h2>
+                                    </div>
+                                    <div class="content-description">
+                                        «Модерн» — это строгий жилой комплекс, который отлично <br> подойдет тем, кто любит строгие цвета и фигуру дома. Тихий <br> район, недалеко ТЦ, школа и детский сад. Жилой комплекс <br> состоит из 3 домов. Каждый дом состоит из 3 подъездов с <br> разной этажностью (9 - 16 этажей).  
+                                    </div>
+                                    <div class="content-price">
+                                        <div class="price-item__one price-item">
+                                            <div class="price-item__text">
+                                                <h3> 2-комн. от 67 кв.м </h3>
+                                                <p> 4.4 - 4.9 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__two price-item">
+                                            <div class="price-item__text">
+                                                <h3> 3-комн. от 75 кв.м </h3>
+                                                <p> 5.2 - 5.6 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                        <div class="price-item__three price-item">
+                                            <div class="price-item__text">
+                                                <h3> 4-комн. от 90 кв.м </h3>
+                                                <p> 5.8 - 6.3 млн. ₽ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="appartament-page-list">
+                <a href="../html/apartament_new-build.html"><div class="page-button"> 1 </div></a>
+                <a href="../html/apartament_new-build-page_two.html"><div class="page-button active-button"> 2 </div></a>
+                <a href=""><div class="page-button"> 3 </div></a>
+                <a href=""><div class="page-button"> 4 </div></a>
+                <a href=""><div class="page-button"> 5 </div></a>
+                <a href=""><div class="page-button last-page-button"> ... </div></a>
+            </div>
+            <div class="main-announcement">
+                <p> Нужна помощь с подбором <br> недвижимости? Звони! </p> 
+                <div class="main-announcement_btn" id="open-modal-btn"> Номер риелтора </div>
+                <div class="modal-realtor" id="modal-window">
+                    <div class="modal-realtor-box">
+                        <div class="modal-form">
+                            <div class="form-title">
+                                <h3> Связаться с риелтором </h3>
+                            </div>
+                            <form class="form__content">
+                                <div class="form__name form__group">
+                                    <label class="form__label">Введите имя</label>
+                                    <input type="text" class="form__input" placeholder="Ваше имя">
+                                </div>
+                                <div class="form__number form__group">
+                                    <label class="form__label">Введите номер телефона</label>
+                                    <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+                                </div>
+                                <div class="form__ask form__group">
+                                    <label class="form__label">Опишите, что вас интересует</label>
+                                    <textarea class="form__area"></textarea>
+                                </div>
+                                <input type="submit" class="form__button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-link">
+                    <div class="company-info-list">
+                        <h3> О компании </h3>
+                        <ul>
+                            <li><a href="../html/partner.html"> Партнеры </a></li>
+                            <li class="contacts-list"><a href="../html/contact.html"> Контакты </a></li>
+                            <li><a href="../html/information.html"> Информация </a></li>
+                        </ul>
+                    </div>
+                    <div class="catalog-list">
+                        <h3> Каталог </h3>
+                        <ul>
+                            <li><a href="../html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                            <li><a href="../html/apartament_resale.html">Квартиры во вторичке</a></li>
+                            <li><a href="../html/cottage.html">Коттеджи</a></li>
+                            <li><a href="../html/house.html">Дома</a></li>
+                            <li><a href="../html/rooms.html">Помещения</a></li>
+                        </ul>
+                    </div>
+                    <div class="support-list">
+                        <h3> Поддержка </h3>
+                        <ul>
+                            <li>+7 951 557 54-32</li>
+                            <li>New_house@gmail.com</li>
+                            <li class="сopyright-statement">2023 © New House. Все права защищены</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+<script src="../js/script.js"></script>
+</body>
+</html>
