@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Помещение 350 кв.м </title>
+
+    <link rel="stylesheet" href="../../css/rooms-item/rooms_350.css">
+    <link rel="stylesheet" href="../../css/nav_footer-style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <nav id="navbar">
+                    <div class="navbar-container">
+                       <p><a href="../../home.html"><img src="../../img/logo/logo.svg" alt="" class="header-logo"></a></p>
+                        <div class="navbar-wrap">
+                            <ul class="navbar-menu">
+                                <li>
+                                    <a href="#" class="link-catalog">Каталог</a>
+                                    <ul class="submenu">
+                                        <div class="submenu-list">
+                                            <div class="submenu-list-left">
+                                                <li><a href="#">Квартиры</a></li>
+                                                <li><a href="#">Дома и коттеджи</a></li>
+                                                <li><a href="../../html/rooms.html">Помещения</a></li>
+                                            </div>
+                                            <div class="submenu-list-apartament">
+                                                <li><a href="../../html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                                                <li><a href="../../html/apartament_resale.html">Квартиры во вторичке</a></li>
+                                            </div>
+                                            <div class="submenu-list-house__cottage">
+                                                <li><a href="../../html/house.html">Дома</a></li>
+                                                <li><a href="../../html/cottage.html">Коттеджи</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li><a href="../../html/information.html" class="link-info">Информация</a></li>
+                                <li><a href="../../html/contact.html" class="link-contacts">Контакты</a></li>
+                                <li><a href="../../html/partner.html" class="link-partners">Партнеры</a></li>
+                            </ul>
+                            <img src="../../img/home-img/mark-icon.svg" alt="" class="mark">
+                            <a href="" class="city navbar__style">Воронеж</a>
+                            <div href="" class="user navbar__style" id="open-modal-log-btn">Вход/Регистрация</div>
+                            <div class="modal-log" id="modal-window-log">
+                                <div class="modal-log-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Вход в личный кабинет </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__email__num-tel form__group">
+                                                <label class="form__label">Введите email или номер телефона</label>
+                                                <input type="text" name="email__num-tel" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Введите пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Пароль" required>
+                                            </div>
+                                            <div class="recovery-pass">
+                                                <span class="reg-btn" id="open-modal-reset_pass-btn"> Забыли пароль? </span>
+                                            </div>
+                                            <input type="submit" class="form__button-log" value="Войти">
+                                            <div class="link-reg"> Нет аккаунта? <span class="reg-btn" id="open-modal-reg-btn"> Зарегистрироваться </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-reg" id="modal-window-reg">
+                                <div class="modal-reg-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Регистрация </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form__name form__group">
+                                                <label class="form__label">Введите имя</label>
+                                                <input type="text" name="user" class="form__input" placeholder="Ваше имя" required>
+                                            </div>
+                                            <div class="form__surname form__group">
+                                                <label class="form__label">Введите фамилию</label>
+                                                <input type="text" name="surname" class="form__input" placeholder="Ваша фамилия" required>
+                                            </div>
+                                            <div class="form__email form__group">
+                                                <label class="form__label">Введите Email</label>
+                                                <input type="email" name="email" class="form__input" placeholder="Ваш Email" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Придумайте пароль</label>
+                                                <input type="password" name="password" class="form__input" placeholder="Придумайте пароль" required>
+                                            </div>
+                                            <div class="form__password form__group">
+                                                <label class="form__label">Повторите пароль</label>
+                                                <input type="password" name="repeat-password" class="form__input" placeholder="Повторите пароль" required>
+                                            </div>
+                                            <div class="form__checkbox-btn">
+                                                <input type="checkbox" class="input__checkbox" id="checkbox_reg" required> 
+                                                <label class="checkbox__label" for="checkbox_reg"> <p> Cоглашаюсь с <span class="checkbox-link"> условиями использования персональных данных </span> и <span class="checkbox-link"> правилами программы New House </span> </p> </label>
+                                            </div>
+                                            <input type="submit" class="form__button-reg" value="Зарегистрироваться">
+                                            <div class="link-login"> Есть аккаунт? <span class="login-btn" id="registration-login-btn"> Войти </span></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-reset_pass" id="modal-window-reset_pass">
+                                <div class="modal-reset_pass-box">
+                                    <div class="modal-form">
+                                        <div class="form-title">
+                                            <h3> Восстановление пароля </h3>
+                                        </div>
+                                        <form class="form__content">
+                                            <div class="form-reset form__group">
+                                                <label class="form__label">Введите адрес электронной почты или номер <br> телефона, на который зарегистрирован профиль</label>
+                                                <input type="text" name="reset_pass" class="form__input" placeholder="Ваш email или номер телефона" required>
+                                            </div>
+                                            <input type="submit" class="form__button-reset_pass" value="Восстановить">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-title">
+                    <h1> Помещение <br> 350 кв.м </h1> 
+                    <div class="header-price_button">
+                        <p> 25 500 000 ₽ </p>
+                        <div class="header-button" id="open-modal-btn"> Номер риелтора </div>
+                        <div class="modal-realtor" id="modal-window">
+                            <div class="modal-realtor-box">
+                                <div class="modal-form">
+                                    <div class="form-title">
+                                        <h3> Связаться с риелтором </h3>
+                                    </div>
+                                    <form class="form__content">
+                                        <div class="form__name form__group">
+                                            <label class="form__label">Введите имя</label>
+                                            <input type="text" class="form__input" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="form__number form__group">
+                                            <label class="form__label">Введите номер телефона</label>
+                                            <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+                                        </div>
+                                        <div class="form__ask form__group">
+                                            <label class="form__label">Опишите, что вас интересует</label>
+                                            <textarea class="form__area"></textarea>
+                                        </div>
+                                        <input type="submit" class="form__button">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-title-info">
+                    <div class="change-info">
+                        <h2> Сдача дома </h2>
+                        <p> Дом сдан </p>
+                    </div>
+                    <div class="class-info">
+                        <h2> Класс дома </h2>
+                        <p> Комфорт </p>
+                    </div>
+                    <div class="developer-info">
+                        <h2> Застройщик </h2>
+                        <p> ООО “ДСК” </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="main-content-container">
+                <div class="content-location">
+                    <h2> Местоположение: </h2>
+                    <p> Воронежская обл., г. Воронеж, ул. Карпинского, 23 </p>
+                </div>
+                <div class="item-info_one">
+                    <div class="info-deadline">
+                        <p><img src="../../img/icon/icon-deadline.svg" alt="" class="info-icon"> <span class='info-text-title'> Срок сдачи: </span> </p>
+                        <p>Декабрь 2022</p>
+                    </div>
+                    <div class="info-floor">
+                        <p><img src="../../img/icon/icon-floor.svg" alt="" class="info-icon"> <span class='info-text-title'> Этаж: </span> </p>
+                        <p> 3 этаж </p>
+                    </div>
+                    <div class="info-type">
+                        <p><img src="../../img/icon/icon-type.svg" alt="" class="info-icon"> <span class='info-text-title'> Тип здания: </span> </p>
+                        <p> Бизнес-центр </p>
+                    </div>
+                </div>
+                <div class="item-info_two">
+                    <div class="info-room">
+                        <p><img src="../../img/icon/icon-room.svg" alt="" class="info-icon"> <span class='info-text-title'> Кол-во комн. </span> </p>
+                        <p> 3-комн. </p>
+                    </div>
+                    <div class="info-parking">
+                        <p><img src="../../img/icon/icon-entrance.svg" alt="" class="info-icon"> <span class='info-text-title'> Вход: </span> </p>
+                        <p> Отдельный </p>
+                    </div>
+                    <div class="info-area">
+                        <p><img src="../../img/icon/icon-square.svg" alt="" class="info-icon"> <span class='info-text-title'> Площадь: </span> </p>
+                        <p> 350 кв.м </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="../../img/rooms-img/rooms-item-img/rooms_350-main.png" alt="">    
+            </div>
+        </main>
+        <aside class="aside-announcement">
+            <div class="aside-container">
+                <h2> Похожие объявления </h2>
+                <div class="announcement-item-list">
+                    <a href="#">
+                        <div class="announcement-item">
+                            <img src="../../img/rooms-img/rooms-item-img/ads-rooms/rooms_98.png" alt="">
+                            <p class="item-price"> 7 500 000 ₽ </p>
+                            <p class="item-info"> 1-комн., 98 кв.м, 1 этаж </p>
+                            <p class="item-location"> ДСК, г. Воронеж, ул. 9 января, 280 </p>
+                        </div>
+                    </a>
+                    <a href="../../html/rooms-item/rooms_320.html">
+                        <div class="announcement-item">
+                            <img src="../../img/rooms-img/rooms-item-img/ads-rooms/rooms_320.png" alt="">
+                            <p class="item-price"> 34 000 000 ₽ </p>
+                            <p class="item-info"> 4-комн.кв., 320 кв.м, 3-4 этаж </p>
+                            <p class="item-location"> ДСК, г. Воронеж, ул. Кольцовская, 123 </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="announcement-item">
+                            <img src="../../img/rooms-img/rooms-item-img/ads-rooms/rooms_229.png" alt="">
+                            <p class="item-price"> 28 000 000 ₽ </p>
+                            <p class="item-info"> 3-комн.кв., 229 кв.м, 2 этаж </p>
+                            <p class="item-location"> Выбор, г. Воронеж, ул. Дружиников, 8 </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="announcement-item">
+                            <img src="../../img/rooms-img/rooms-item-img/ads-rooms/rooms_212.png" alt="">
+                            <p class="item-price"> 7 500 000 ₽ </p>
+                            <p class="item-info"> 5-комн.кв., 212 кв.м, 1 этаж </p>
+                            <p class="item-location"> Инстеп, г. Воронеж, ул. Шишкова, 22 </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-link">
+                    <div class="company-info-list">
+                        <h3> О компании </h3>
+                        <ul>
+                            <li><a href="../../html/partner.html"> Партнеры </a></li>
+                            <li class="contacts-list"><a href="../../html/contact.html"> Контакты</a></li>
+                            <li><a href="../../html/information.html"> Информация </a></li>
+                        </ul>
+                    </div>
+                    <div class="catalog-list">
+                        <h3> Каталог </h3>
+                        <ul>
+                            <li><a href="../../html/apartament_new-build.html">Квартиры в новостройке</a></li>
+                            <li><a href="../../html/apartament_resale.html">Квартиры во вторичке</a></li>
+                            <li><a href="../../html/cottage.html">Коттеджи</a></li>
+                            <li><a href="../../html/house.html">Дома</a></li>
+                            <li><a href="../../html/rooms.html">Помещения</a></li>
+                        </ul>
+                    </div>
+                    <div class="support-list">
+                        <h3> Поддержка </h3>
+                        <ul>
+                            <li>+7 951 557 54-32</li>
+                            <li>New_house@gmail.com</li>
+                            <li class="сopyright-statement">2023 © New House. Все права защищены</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+<script src="../../js/script.js"></script>
+</body>
+</html>

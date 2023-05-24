@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header-title {
+    background-image: url(../../img/cottage-img/cottage-item-img/cottage_110-header.png);
+    background-size: cover;
+    height: 650px;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.4);
+
+    color: #fff;
+    display: block;
+}
+
+.header-title > h1 {
+    font-size: 120px;
+    padding-top: 130px;
+    padding-left: 130px;
+}
+
+.header-title > a {
+    text-decoration: none;
+}
+
+.header-price_button {
+    display: flex;
+}
+
+.header-price_button > p {
+    font-size: 100px;
+    font-weight: bold;
+    padding-left: 130px;
+}
+
+.header-price_button > a {
+    text-decoration: none;
+}
+
+.header-button {
+    color: #FFFFFF;
+    width: 500px;
+    border: 4px solid #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px;
+    font-size: 33px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 200px;
+    font-size: 50px;
+
+    transform: scale(1);
+    transition: border 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in;
+}
+
+.header-button:hover {
+    border: 4px solid #d8d5d5;
+    transform: scale(1.03);
+    background-color: #000000;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+.header-title-info {
+    background-color: #846A5A;;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+}
+
+.change-info {
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+.change-info > p {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.class-info {
+    margin-top: 40px;
+}
+
+.class-info > p {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.developer-info {
+    margin-right: 160px;
+    margin-top: 40px;
+}
+
+.developer-info > p {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+/* MAIN */
+
+.main-content-container {
+    margin: 0px 115px;
+}
+
+.content-location {
+    margin-top: 110px;
+}
+
+.content-location > h2 {
+    font-weight: 300;
+    font-size: 46px;
+}
+
+.content-location > p {
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.info-icon {
+    vertical-align: middle;
+}
+  
+.info-text-title {
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+  
+.item-info_one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+  
+.item-info_one p:nth-child(2) {
+    font-weight: 100;
+    font-size: 25px;
+    margin-left: 85px;
+}
+  
+.item-info_one > div {
+    width: 415px;
+    height: 105px;
+}
+  
+.item-info_two {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.item-info_two p:nth-child(2) {
+    font-weight: 100;
+    font-size: 25px;
+    margin-left: 85px;
+}
+  
+.item-info_two > div {
+    width: 415px;
+    height: 105px;
+}
+
+.main-img {
+    margin-top: 135px;
+}
+
+.main-img > img {
+    width: 100%;
+}
+
+/* MAIN END */
+
+
+/* ASIDE ADS */
+
+.aside-announcement {
+    margin-top: 60px;
+}
+
+.aside-container {
+    margin: 0 60px;
+}
+
+.aside-container > h2 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.announcement-item-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+}
+
+.announcement-item-list > a {
+    text-decoration: none;
+}
+
+.announcement-item {
+    border: 1px solid #000000;
+    height: 400px;
+    border-radius: 5px;
+    color: #000000;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.announcement-item:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+.item-price {
+    font-size: 35px;
+    margin-left: 31px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.item-info {
+    font-size: 20px;
+    margin-left: 31px;
+    font-weight: 300;
+}
+
+.item-location {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 31px;
+    padding-top: 20px;
+}
+
+/* FOOTER */
+
+#footer {
+    margin-top: 39px;
+}
+
+/* FOOTER END */
+
+@media screen and (min-width: 1860px) {
+    .header-button {
+        margin-left: 500px;
+    }
+}
